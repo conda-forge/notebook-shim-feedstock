@@ -1,12 +1,11 @@
-{% set name = "notebook-shim" %}
 {% set version = "0.2.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: notebook-shim
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/notebook_shim-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/n/notebook-shim/notebook_shim-{{ version }}.tar.gz
   sha256: fdb81febb05932c6d19e44e10382ce05469cac5e1b6e99b49be6159ddb5e4804
 
 build:
@@ -16,11 +15,11 @@ build:
 
 requirements:
   host:
-    - jupyter-packaging >=0.10,<1
+    - hatchling >=1.0
     - pip
     - python >=3.7
   run:
-    - jupyter_server >=1.8,<2
+    - jupyter_server >=1.8,<3
     - python >=3.7
 
 test:
