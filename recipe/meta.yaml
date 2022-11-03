@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.2" %}
 
 package:
   name: notebook-shim
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/notebook-shim/notebook_shim-{{ version }}.tar.gz
-  sha256: fdb81febb05932c6d19e44e10382ce05469cac5e1b6e99b49be6159ddb5e4804
+  sha256: 090e0baf9a5582ff59b607af523ca2db68ff216da0c69956b62cab2ef4fc9c3f
 
 build:
   noarch: python
