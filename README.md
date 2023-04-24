@@ -1,11 +1,11 @@
-About notebook-shim
-===================
+About notebook-shim-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/notebook-shim-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jupyterlab/notebook_shim
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/notebook-shim-feedstock/blob/main/LICENSE.txt)
 
 Summary: A shim layer for notebook traits and config
 
