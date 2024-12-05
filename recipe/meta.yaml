@@ -5,22 +5,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/n/notebook-shim/notebook_shim-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/n/notebook-shim/notebook_shim-{{ version }}.tar.gz
   sha256: b4b2cfa1b65d98307ca24361f5b30fe785b53c3fd07b7a47e89acb5e6ac638cb
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - hatchling >=1.0
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - jupyter_server >=1.8,<3
-    - python >=3.7
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -29,6 +29,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/jupyterlab/notebook_shim
